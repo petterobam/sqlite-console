@@ -2,6 +2,8 @@
 用于管理服务器上所有Sqlite数据库的Web应用，实现功能类似于Sqlite控制台。
 
 # 基本功能演示
+PS：请放大查看 ~~
+
 ![my-sqlite-console-show](doc/images/my-sqlite-console-show.gif)
 
 # 基本界面设计
