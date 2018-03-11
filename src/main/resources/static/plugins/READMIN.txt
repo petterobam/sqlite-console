@@ -1,0 +1,13 @@
+所有核心文件和扩展文件都放置次目录，并记录更新日志
+
+20170901
+1、重构目录（zhangaiping）
+
+2017-09-04
+1、整理图标，删除框架里的font-awesome的引用，所有图标全部引用阿里的fonticon,两种用法，分别对应demo_fontclass.html和demo_unicode.html示例页面（yenian）
+2、修改small文件夹下的jqgrid.small.css和layui.small.css（yenian）
+
+2017-0905（zhangaiping）
+1、重新整理core目录，引入了seajs
+2、添加了表单验证的功能
+3、添加了components和util文件夹

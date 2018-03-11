@@ -1,0 +1,34 @@
+<div class="vetech-tab">
+    <div class="vtitle">{{d.title}}</div>
+    <span class="close"></span>
+    <div class="tab-header">
+        <ul class="clearfix">
+            {{# for(var i = 0, len = d.list.length; i < len; i++){ }}
+                <li class="tab"><a href="javascript:;" data-index="{{i}}">{{d.list[i].text}}</a></li>
+            {{# } }}
+        </ul>
+    </div>
+     {{# for(var i = 0, len = d.list.length; i < len; i++){ }}
+            <div class="tab-content">
+                {{# for(var j = 0 , len2 = d.list[i].groups.length; j < len2; j++ ){ }}
+                    <dl class="clearfix">
+                        {{# if(d.list[i].groups[j].gName){ }}
+                            <dt>{{d.list[i].groups[j].gName}}</dt>
+                        {{# } }}
+                            <dd class="{{ d.list[i].groups[j].gName ? '' : 'noDt' }}"  >
+                                <ul class="clearfix">
+                                {{# for(var k = 0, len3 = d.list[i].groups[j].items.length; k < len3; k++){ }}
+                                    <li class="item">
+                                        <a href="javascript:;" class="ellipsis" id="{{d.list[i].groups[j].items[k][d.simpleData.id]}}" title="{{d.list[i].groups[j].items[k][d.simpleData.name]}}">
+                                            {{d.list[i].groups[j].items[k][d.simpleData.name]}}
+                                        </a>
+                                    </li>
+                                {{# } }}
+                                </ul>
+                            </dd>
+                    </dl>
+                {{# } }}
+            </div>
+        {{# } }}
+
+</div>

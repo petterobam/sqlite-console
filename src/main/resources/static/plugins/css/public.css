@@ -1,0 +1,337 @@
+
+/*公共的css，每个页面都会用到 文本字体*/
+.layui-f12{font-size: 12px !important;}
+.layui-f13{font-size: 13px !important;}
+.layui-f14{font-size: 14px !important;}
+.layui-f15{font-size: 15px !important;}
+.layui-f16{font-size: 16px !important;}
+.layui-f17{font-size: 17px !important;}
+.layui-f18{font-size: 18px !important;}
+.layui-f19{font-size: 19px !important;}
+.layui-f20{font-size: 20px !important;}
+.layui-f22{font-size: 22px !important;}
+.layui-f24{font-size: 24px !important;}
+.layui-f28{font-size: 28px !important;}
+.layui-f30{font-size: 30px !important;}
+.layui-bold{font-weight: bold !important;}
+
+
+/*向左向右*/
+.layui-mauto{margin: auto !important;}
+.layui-m0{margin: 0px !important;}
+.layui-m5{margin: 5px !important;}
+.layui-m10{margin: 10px !important;}
+.layui-m15{margin: 15px !important;}
+.layui-m20{margin: 20px !important;}
+.layui-m25{margin: 25px !important;}
+.layui-m30{margin: 30px !important;}
+.layui-m35{margin: 35px !important;}
+.layui-m40{margin: 40px !important;}
+.layui-m45{margin: 45px !important;}
+.layui-m50{margin: 50px !important;}
+.layui-mt0{margin-top: 0px !important;}
+.layui-mt5{margin-top: 5px !important;}
+.layui-mt10{margin-top: 10px !important;}
+.layui-mt15{margin-top: 15px !important;}
+.layui-mt20{margin-top: 20px !important;}
+.layui-mt25{margin-top: 25px !important;}
+.layui-mt30{margin-top: 30px !important;}
+.layui-mt35{margin-top: 35px !important;}
+.layui-mt40{margin-top: 40px !important;}
+.layui-mt45{margin-top: 45px !important;}
+.layui-mt50{margin-top: 50px !important;}
+.layui-mr0{margin-right: 0px !important;}
+.layui-mr2{margin-right: 2px !important;}
+.layui-mr5{margin-right: 5px !important;}
+.layui-mr10{margin-right: 10px !important;}
+.layui-mr15{margin-right: 15px !important;}
+.layui-mr20{margin-right: 20px !important;}
+.layui-mr25{margin-right: 25px !important;}
+.layui-mr30{margin-right: 30px !important;}
+.layui-mr35{margin-right: 35px !important;}
+.layui-mr40{margin-right: 40px !important;}
+.layui-mr45{margin-right: 45px !important;}
+.layui-mr50{margin-right: 50px !important;}
+.layui-mb0{margin-bottom: 0px !important;}
+.layui-mb5{margin-bottom: 5px !important;}
+.layui-mb10{margin-bottom: 10px !important;}
+.layui-mb15{margin-bottom: 15px !important;}
+.layui-mb20{margin-bottom: 20px !important;}
+.layui-mb25{margin-bottom: 25px !important;}
+.layui-mb30{margin-bottom: 30px !important;}
+.layui-mb35{margin-bottom: 35px !important;}
+.layui-mb40{margin-bottom: 40px !important;}
+.layui-mb45{margin-bottom: 45px !important;}
+.layui-mb50{margin-bottom: 50px !important;}
+.layui-ml0{margin-left: 0px !important;}
+.layui-ml5{margin-left: 5px !important;}
+.layui-ml10{margin-left: 10px !important;}
+.layui-ml15{margin-left: 15px !important;}
+.layui-ml20{margin-left: 20px !important;}
+.layui-ml25{margin-left: 25px !important;}
+.layui-ml30{margin-left: 30px !important;}
+.layui-ml35{margin-left: 35px !important;}
+.layui-ml40{margin-left: 40px !important;}
+.layui-ml45{margin-left: 45px !important;}
+.layui-ml50{margin-left: 50px !important;}
+
+/*padding start*/
+.layui-p0{padding: 0px !important;}
+.layui-p5{padding: 5px !important;}
+.layui-p10{padding: 10px !important;}
+.layui-p15{padding: 15px !important;}
+.layui-p20{padding: 20px !important;}
+.layui-p25{padding: 25px !important;}
+.layui-p30{padding: 30px !important;}
+.layui-p35{padding: 35px !important;}
+.layui-p40{padding: 40px !important;}
+.layui-p45{padding: 45px !important;}
+.layui-p50{padding: 50px !important;}
+.layui-pt0{padding-top: 0px !important;}
+.layui-pt5{padding-top: 5px !important;}
+.layui-pt10{padding-top: 10px !important;}
+.layui-pt15{padding-top: 15px !important;}
+.layui-pt20{padding-top: 20px !important;}
+.layui-pt25{padding-top: 25px !important;}
+.layui-pt30{padding-top: 30px !important;}
+.layui-pt35{padding-top: 35px !important;}
+.layui-pt40{padding-top: 40px !important;}
+.layui-pt45{padding-top: 45px !important;}
+.layui-pt50{padding-top: 50px !important;}
+.layui-pr0{padding-right: 0px !important;}
+.layui-pr5{padding-right: 5px !important;}
+.layui-pr10{padding-right: 10px !important;}
+.layui-pr15{padding-right: 15px !important;}
+.layui-pr20{padding-right: 20px !important;}
+.layui-pr25{padding-right: 25px !important;}
+.layui-pr30{padding-right: 30px !important;}
+.layui-pr35{padding-right: 30px !important;}
+.layui-pr40{padding-right: 40px !important;}
+.layui-pr45{padding-right: 45px !important;}
+.layui-pr50{padding-right: 50px !important;}
+.layui-pb0{padding-bottom: 0px !important;}
+.layui-pb5{padding-bottom: 5px !important;}
+.layui-pb10{padding-bottom: 10px !important;}
+.layui-pb15{padding-bottom: 15px !important;}
+.layui-pb20{padding-bottom: 20px !important;}
+.layui-pb25{padding-bottom: 25px !important;}
+.layui-pb30{padding-bottom: 30px !important;}
+.layui-pb35{padding-bottom: 35px !important;}
+.layui-pb40{padding-bottom: 40px !important;}
+.layui-pb45{padding-bottom: 45px !important;}
+.layui-pb50{padding-bottom: 50px !important;}
+.layui-pl0{padding-left: 0px !important;}
+.layui-pl5{padding-left: 5px !important;}
+.layui-pl10{padding-left: 10px !important;}
+.layui-pl15{padding-left: 15px !important;}
+.layui-pl20{padding-left: 20px !important;}
+.layui-pl25{padding-left: 25px !important;}
+.layui-pl30{padding-left: 30px !important;}
+.layui-pl35{padding-left: 35px !important;}
+.layui-pl40{padding-left: 40px !important;}
+.layui-pl45{padding-left: 45px !important;}
+.layui-pl50{padding-left: 50px !important;}
+
+.layui-ptb0{padding-top: 0px !important;padding-bottom: 0px !important;}
+.layui-ptb5{padding-top: 5px !important;padding-bottom: 5px !important;}
+.layui-ptb10{padding-top: 10px !important;padding-bottom: 10px !important;}
+.layui-ptb15{padding-top: 15px !important;padding-bottom: 15px !important;}
+.layui-ptb20{padding-top: 20px !important;padding-bottom: 20px !important;}
+.layui-ptb25{padding-top: 25px !important;padding-bottom: 25px !important;}
+.layui-ptb30{padding-top: 30px !important;padding-bottom: 30px !important;}
+.layui-ptb35{padding-top: 35px !important;padding-bottom: 35px !important;}
+.layui-ptb40{padding-top: 40px !important;padding-bottom: 40px !important;}
+.layui-ptb45{padding-top: 45px !important;padding-bottom: 45px !important;}
+.layui-ptb50{padding-top: 50px !important;padding-bottom: 50px !important;}
+
+
+.layui-lh14{line-height: 14px;}
+.layui-lh18{line-height: 18px;}
+.layui-lh20{line-height:20px;}
+.layui-lh22{line-height:22px;}
+.layui-lh24{line-height:24px;}
+.layui-lh26{line-height:26px;}
+.layui-lh28{line-height:28px;}
+.layui-lh30{line-height:30px;}
+.layui-lh34{line-height:34px;}
+.layui-lh36{line-height:36px;}
+.layui-lh38{line-height:38px;}
+.layui-lh40{line-height:40px;}
+.layui-lh50{line-height:50px;}
+
+/*宽度*/
+.layui-w30{width: 30px!important;}
+.layui-w40{width: 40px!important;}
+.layui-w50{width: 50px!important;}
+.layui-w60{width: 60px!important;}
+.layui-w65{width: 65px!important;}
+.layui-w80{width: 80px!important;}
+.layui-w100{width: 100px!important;}
+.layui-w120{width: 120px!important;}
+.layui-w140{width: 140px!important;}
+.layui-w180{width: 180px!important;}
+.layui-w200{width: 200px!important;}
+
+/*最小宽度*/
+.layui-min60{min-width: 60px;}
+.layui-min80{min-width: 80px;}
+.layui-min100{min-width: 100px;}
+.layui-min120{min-width: 120px;}
+.layui-min140{min-width: 140px;}
+.layui-min160{min-width: 160px;}
+.layui-min180{min-width: 180px;}
+.layui-min220{min-width: 220px;}
+.layui-min260{min-width: 260px;}
+.layui-min280{min-width: 280px;}
+.layui-min300{min-width: 300px;}
+.layui-min320{min-width: 320px;}
+.layui-min340{min-width: 340px;}
+
+/*最大宽度*/
+.layui-max100{max-width: 100px;}
+.layui-max120{max-width: 120px;}
+.layui-max140{max-width: 140px;}
+.layui-max180{max-width: 180px;}
+.layui-max220{max-width: 220px;}
+.layui-max260{max-width: 260px;}
+.layui-max280{max-width: 280px;}
+.layui-max-b90{max-width: 90%;}
+
+/*文本方向*/
+.layui-center{text-align: center!important;;}
+.layui-left{text-align: left!important;;}
+.layui-right{text-align: right!important;;}
+
+/*浮动方向*/
+.layui-fl-left{float: left!important;;}
+.layui-fl-right{float: right!important;;}
+
+
+/*圆角弧度*/
+.layui-border-rd2{border-radius: 2px;}
+
+
+/*颜色*/
+.dark {color: #333!important;}
+.white {color: #FFF!important;}
+.red {color: #f00!important;}
+.red2 {color: #E08374!important;}
+.light-red {color: #F77!important;}
+.blue {color: #008cff!important;}
+.blue2 {color: #478FCA!important;}
+.light-blue {color: #93CBF9!important;}
+.green {color: #1aa194!important;}
+.light-green {color: #B0D877!important;}
+.orange {color: #FF892A!important;}
+.orange2 {color: #FEB902!important;}
+.light-orange {color: #FCAC6F!important;}
+.purple {color: #A069C3!important;}
+.pink {color: #C6699F!important;}
+.pink2 {color: #D6487E!important;}
+.brown {color: brown!important;}
+.grey {color: #777!important;}
+.grey2 {color: #999!important;}
+.light-grey {color: #BBB!important;}
+i{font-style: normal;}
+
+
+.admin-main{margin: 10px 10px 10px 15px;}
+
+/*扩展背景色*/
+.layui-kz-bg1{background: #f9f9f9;}
+.layui-kz-bg2{background: #EFF9FF;}
+
+.ptmk-red{background: #d41616!important;}
+.ptmk-orange{background: #fd8024!important;}
+.ptmk-yellow{background: #e5cd00!important;}
+.ptmk-green{background: #12887e!important;}
+.ptmk-indigo{background: #2dd4d4!important;}
+.ptmk-blue{background: #048aca!important;}
+.ptmk-purple{background: #943fc0!important;}
+.ptmk-black{background: #333!important;}
+
+
+/*扩展layui-label*/
+.layui-kz-input{padding-left: 5px;}
+.layui-kz-label50 .layui-form-label{width: 50px;}
+.layui-kz-label50 .layui-input-block{margin-left:60px;}
+.layui-kz-label60 .layui-form-label{width: 62px;}
+.layui-kz-label60 .layui-input-block{margin-left:72px;}
+.layui-kz-label80 .layui-form-label{width: 84px;}
+.layui-kz-label80 .layui-input-block{margin-left:94px;}
+.layui-kz-label90 .layui-form-label{width: 96px;}
+.layui-kz-label90 .layui-input-block{margin-left:106px;}
+.layui-kz-label100 .layui-form-label{width: 108px;}
+.layui-kz-label100 .layui-input-block{margin-left: 118px;}
+.layui-kz-label110 .layui-form-label{width: 122px;}
+.layui-kz-label110 .layui-input-block{margin-left: 122px;}
+.layui-kz-label120 .layui-form-label{width: 134px;}
+.layui-kz-label120 .layui-input-block{margin-left: 144px;}
+
+.layui-calender{background: #ffffff url(/static/plugins/images/calender.png ) no-repeat right center;padding-right: 25px !important;}
+.layui-badge-rim {height: 18px;border: 1px solid #ccc;display: inline-block;margin-top: 5px; border-radius: 3px;background-color: #fff;color: #ccc;position: relative;font-size: 12px;line-height: 18px;padding: 2px 5px;}
+
+/*标记*样式*/
+.layui-kz-red{line-height: 10px;color: #f00;font-weight: bold;}
+
+
+/*ztree右键菜单*/
+div#rMenu {position:absolute;visibility:hidden;top:0;background-color: #fff;text-align: left;padding: 2px;border: 1px solid #ccc;color: #333;}
+div#rMenu ul li{margin: 1px 0;padding: 0 5px;cursor: pointer; list-style: none outside none;}
+div#rMenu ul li:hover{background:#999;}
+/**
+锁屏样式
+ */
+.layui-kz-loading.layui-layer-dialog .layui-layer-padding {padding:10px 0px 10px 55px;line-height: 30px;}
+.layui-kz-loading.layui-layer-dialog{min-width: 100px;}
+.layui-kz-loading.layui-layer-dialog .layui-layer-content .layui-layer-ico{top:10px;left:10px;}
+
+/*标题长文本扩展*/
+.layui-input-block.layui-kz-text{line-height: 20px;padding: 5px 0px;min-height: auto;}
+
+/*标题+输入框+*号*/
+.layui-kz-veform .layui-form-item {position: relative;}
+.layui-kz-veform .layui-input-block{margin-right: 10px;}
+.layui-kz-veform .layui-form-item>.layui-kz-bt{position: absolute;top: 12px;right: 0px;line-height: 10px;color: #f00;font-weight: bold;}
+
+/*文本超出……表示*/
+.layui-kz-ellipsis{overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+
+/*防止vue绑定的数据没有加载出来时那一块有闪烁的问题*/
+[v-cloak]{display: none !important;}
+
+/*行内元素无下边距*/
+.layui-kz-inline{position: relative;display: inline-block;vertical-align: middle;margin-right: 10px;}
+
+/*表单方框风格左边标题垂直居中*/
+.layui-kz-verticen{display: inline-block;height: 20px;margin-top: -10px;position: absolute;top:50%;left: 8px;right: 8px;text-align: center;}
+
+
+/*a标签*/
+a.kz-link{color:#0C75D0;text-decoration: underline;cursor: pointer;}
+
+/*扩展 查询列表+grid的布局*/
+.layui-kz-card{position: absolute;top:10px;right: 10px;left: 10px;bottom: 10px;margin:0px;overflow: hidden;}
+.layui-kz-card .layui-tab-content{position: relative; padding: 0px;height: -moz-calc(100% - 33px); height: -webkit-calc(100% - 33px); height: calc(100% - 33px);}
+.layui-kz-card>.layui-tab-title{background:#f5f2f2;}
+.layui-kz-card>.layui-tab-title .layui-this{background:#f9faff;}
+.layui-kz-card>.layui-tab-title .layui-this:after {border-bottom-color: #f9faff;}
+.layui-kz-card .query-list{padding: 5px 5px 0px 5px;border-bottom: 1px solid #e1e1e1;background:#f9faff;}
+.layui-kz-card .grid-content{position: absolute;top:100px;left: 5px;right: 5px;bottom: 5px;}
+.query-notab .query-list{border: 1px solid #e1e1e1;}
+.query-notab .grid-content{left: 0px;right: 0px;bottom: 0px;}
+
+/*异动日志*/
+.serviceLog-container td{background:#000; color:#00FF00;}
+.serviceLog-container pre{margin:10px;}
+
+/*layui tree颜色*/
+.layui-tree-skin-shihuang .layui-tree-branch{color: #EDCA50;}
+
+.layui-tree-skin-shihuang .layui-tree-spread{
+    color:#999;
+}
+
+/*给pulldown 和 下拉单多选加样式*/
+.ve-arrow-up{background: #ffffff url(/static/plugins/components/img/up.png) no-repeat right center;padding-right: 25px !important;}
+.ve-arrow-down{background: #ffffff url(/static/plugins/components/img/down.png) no-repeat right center;padding-right: 25px !important;}

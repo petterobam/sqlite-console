@@ -1,0 +1,349 @@
+/*main.css主框架的左菜单列表样式*/
+.sidebar,.sidebar:before,.sidebar :after,.sidebar *, .sidebar *:before, .sidebar *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sidebar,.sidebar:before,.sidebar :after,.sidebar *, .sidebar *:before, .sidebar *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 200px;
+    float: left;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 0 0px 0 0;
+}
+.sidebar:before {
+    display: block;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    border-width: inherit;
+}
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.nav:after, .nav:before{
+    content: " ";
+    display: table;
+}
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav>li, .nav>li>a {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+.nav-list>li {
+    display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #d0d0d0;
+    background-color: #F8F8F8;
+    color: #585858;
+    
+}
+.nav-list>li:last-child {
+    border-bottom-width: 1px;
+}
+.nav-list>li.open:before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+    height: 43px;
+    width: 3px;
+    max-width: 3px;
+    overflow: hidden;
+    background-color: #629CC9;
+}
+.nav>li>a {
+    padding: 6px 15px;
+}
+.nav-list li.active>a:after, .nav-list>li:before, .nav-list>li>.submenu:before, .nav-list>li>.submenu>li:before, .sidebar .sidebar-toggle:before, .sidebar.menu-min .nav-list>li>.submenu:after, .sidebar:before, li.divider:before {
+    content: "";
+}
+.nav-list>li>a {
+    display: block;
+    height: 42px;
+    line-height: 30px;
+    padding-left: 4px;
+    text-shadow: none!important;
+    font-size: 15px;
+}
+
+.nav-list>li .submenu>li>a:hover, .nav-list>li>a, a:active, a:focus {
+    text-decoration: none;
+}
+.nav-list li>.arrow {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 1px;
+    z-index: 1027;
+}
+
+.nav-list li.active>a:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+    top: 50%;
+    border: 8px solid transparent;
+    border-width: 10px 8px
+}
+
+.nav-list li.open>a:after {
+    display: none
+}
+.nav-list>li>a>.menu-icon {
+    display: inline-block;
+    min-width: 30px;
+    margin-right: 2px;
+    vertical-align: sub;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+.nav-list>li a>.arrow {
+    display: block;
+    width: 14px!important;
+    height: 14px;
+    line-height: 14px;
+    text-shadow: none;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-list li.active>a>.arrow, .nav-list li.open>a>.arrow, .nav-list li:hover>a>.arrow {
+    color: inherit;
+}
+
+.nav-list>li .submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    position: relative;
+}
+.nav-list>li>.submenu {
+    border-top: 1px solid;
+}
+
+.nav-list>li>.submenu:before {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 19px;
+    top: 0;
+    bottom: 0;
+    border: 1px dotted;
+    border-width: 0 0 0 1px;
+}
+.nav-list li.open>.submenu, .nav-list>li .submenu.collapsing, .nav-list>li>.submenu li.open>.submenu {
+    display: block;
+}
+
+.nav-list>li .submenu>li {
+    margin-left: 0;
+    position: relative;
+}
+
+.nav-list>li>.submenu>li:before {
+    display: block;
+    width: 8px;
+    position: absolute;
+    z-index: 1;
+    left: 19px;
+    top: 19px;
+    border: 1px dotted;
+    border-width: 1px 0 0;
+}
+
+.nav-list>li>.submenu>li:first-child>a {
+    border-top-width: 0;
+}
+
+.nav-list>li>.submenu a>.arrow {
+    right: 10px;
+    top: 12px;
+    font-size: 12px;
+}
+.nav-list>li .submenu>li a>.menu-icon {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    width: 18px;
+    height: auto;
+    line-height: 12px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    z-index: 1;
+    background-color: inherit;
+}
+
+.nav-list>li>.submenu li>.submenu>li {
+    line-height: 18px;
+}
+.nav-list>li>.submenu li>.submenu>li>a {
+    margin-left: 19px;
+    padding-left: 22px;
+}
+
+.nav-list>li>.submenu li>.submenu>li a .arrow, .nav-list>li>.submenu li>.submenu>li a .menu-icon {
+    color: inherit;
+}
+
+.nav-list>li>.submenu li>.submenu>li a>.menu-icon {
+    display: inline-block;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    margin-right: 4px;
+    color: inherit;
+}
+
+
+.nav-list>li.active:after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    z-index: 1;
+    border: 1px solid #2B7DBC;
+    border-width: 0 1px 0 0;
+}
+.nav-list>li:hover:before {
+    display: block;
+}
+
+.nav-list>li.active>a {
+    font-weight: 700;
+    color: #2B7DBC;
+}
+.nav-list li.active>a:after {
+    border-right-color: #2B7DBC;
+}
+.nav-list>li.open>a {
+    background-color: #FAFAFA;
+    color: #1963AA;
+}
+.nav-list .open>a, .nav-list .open>a:focus, .nav-list .open>a:hover {
+    background-color: #FAFAFA;
+}
+.nav-list>li:hover>a {
+    background-color: #FFF;
+    color: #266cad;
+}
+.nav-list>li.active>a, .nav-list>li.active>a:focus, .nav-list>li.active>a:hover {
+    background-color: #FFF;
+}
+
+
+.nav-list>li>.submenu:before, .nav-list>li>.submenu>li:before {
+    border-color: #9dbdd6;
+}
+.nav-list>li .submenu {
+    background-color: #FFF;
+    border-color: #d0d0d0;
+}
+
+.nav-list>li .submenu>li>a {
+    display: block;
+    position: relative;
+    padding: 9px 0 8px 37px;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    line-height: 20px;
+    font-size: 14px;
+    border-top-color: #d0d0d0;
+    background-color: #FFF;
+    color: #616161;
+}
+.nav-list>li .submenu>li>a:hover {
+    color: #4B88B7;
+    background-color: #F1F5F9;
+}
+.nav-list>li>.submenu li>.submenu>li {
+    line-height: 18px;
+}
+.nav-list>li>.submenu li>.submenu>li a {
+    color: #757575;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 0 7px 28px;;
+}
+
+.nav-list>li>.submenu li>.submenu>li a:hover {
+    color: #4B88B7;
+    background-color: #F1F5F9;
+}
+
+.nav-list>li>.submenu .open>a, .nav-list>li>.submenu .open>a:focus, .nav-list>li>.submenu .open>a:hover {
+    border-color: #E4E4E4;
+}
+
+
+.nav-list>li>.submenu li.open>a, .nav-list>li>.submenu li>.submenu li.active>a, .nav-list>li>.submenu li>.submenu li.open>a {
+    color: #4B88B7;
+}
+
+.nav-list>li>.submenu li>.submenu>li>.submenu>li>a {
+    margin-left: 20px;
+    padding-left: 38px;
+}
+.nav-list>li .submenu>li.active>a>.menu-icon, .nav-list>li .submenu>li:hover>a>.menu-icon {
+    display: inline-block;
+}
+
+.nav-list>li>.submenu li.open:not(.hover)>a>.menu-icon {
+    display: inline-block;
+}
+.nav-list>li>.submenu li.open>a, .nav-list>li>.submenu li>.submenu li.active>a, .nav-list>li>.submenu li>.submenu li.open>a {
+    color: #4B88B7;
+}
+
+
+.skin-green .nav-list>li:before{background-color: #1AA094;}
+.skin-green .nav-list>li:hover>a,.skin-green .nav-list>li.open>a,.layui-nav-green .nav-list>li.active>a{color:#1AA094 ;}
+.skin-green .nav-list>li>.submenu li>.submenu>li a:hover,.skin-green .nav-list>li>.submenu li.open>a, .skin-green .nav-list>li>.submenu li>.submenu li.active>a,.skin-green .nav-list>li>.submenu li>.submenu li.open>a{color:#1AA094 ;}
+.skin-green .nav-list li.active>a:after{border-right-color: #017167;}
+.skin-green .nav-list>li .submenu>li>a:hover{color:#1AA094 ;}
+.skin-green .nav-list>li .submenu>li.active:not(.open)>a {background-color: #bffff6;color: #1aa094;}
+.nav-list>li.active:after{border:0px}
+/*.skin-green .nav-list>li.active.open>a{background: #1AA094;color: #fff;}*/
+
+.layui-side-scroll:hover{width: 200px!important;}
+.layui-side-scroll::-webkit-scrollbar{width: 6px;}

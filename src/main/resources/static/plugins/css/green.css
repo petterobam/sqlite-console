@@ -1,0 +1,11 @@
+/*导航栏*/
+.skin-change{border-bottom-color: #017167 !important;}
+.skin-change .header-demo{ background-color: #1AA094 !important;}
+.skin-change .admin-side-toggle,.admin-side-full{color: #017167 !important;}
+.skin-change .layui-nav .layui-nav-child a:hover{ background-color: #1AA094 !important;}
+.skin-change .layui-body{border-left-color: #017167;}
+.skin-change .admin-nav-card>.layui-tab-title{border-bottom-color: #017167;}
+.skin-change .admin-nav-card>.layui-tab-title .layui-this{background-color: #1AA094;border-color: #1AA094;}
+
+/*左菜单栏*/
+.skin-change .nav-list>li:before { background-color: #1AA094;}

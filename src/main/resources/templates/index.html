@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sqlite控制台</title>
+        <link rel="stylesheet" type="text/css" href="/static/index/main.css"/>
+        <script type="text/javascript" src="/static/plugins/core/jquery.min.js" ></script>
+        <script type="text/javascript" src="/static/plugins/core/laytpl/laytpl.js" ></script>
+    </head>
+    <body>
+        <div id="page">
+            <div id="top">
+                <div id="top-menue">
+                    <ul class="menue-x">
+                        <li>连接</li>
+                        <li>记录</li>
+                        <li>收藏</li>
+                        <li>工具</li>
+                        <li>窗口</li>
+                        <li>帮助</li>
+                    </ul>
+                </div>
+                <div id="connect-pre" class="clear">
+                    <form id="consoleForm">
+                        <select name="absolute">
+                            <option value="false">相对路径</option>
+                            <option value="true" selected="selected">绝对路径</option>
+                        </select>
+                        <input type="text" id="db-path-ipt" name="dbPath" class="inputText" value="D:\Sqlite\dbs"/>
+                        <input type="button" id="findDbBtn" class="inputBtn" value=">" />
+                    </form>
+                </div>
+                <div id="open-info">
+                    <div id="current-db-info"></div>
+                    <div id="open-console-info"></div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="db-list"></div>
+                <div id="console"></div>
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script id="db-list-tpl" type="text/html">
+            {{# for(var i = 0;i < d.length; i++){ }}
+            <div id="db_{{ d[i] }}">
+                <div class="db-area default" db-name="{{ d[i] }}"><span class="red">曰&nbsp;</span>{{ d[i] }}</div>
+                <div class="table-list">
+
+                </div>
+            </div>
+            {{# } }}
+        </script>
+        <script id="table-list-tpl" type="text/html">
+            {{# for(var i = 0;i < d.length; i++){ }}
+            <div class="table-area" table-name="{{ d[i] }}"><span class="green">田&nbsp;</span>{{ d[i] }}</div>
+            {{# } }}
+        </script>
+        <script id="console-active-tpl" type="text/html">
+            <div class="active-console">
+                <div class="console-tag">sqlite&nbsp;＞&nbsp;</div>
+                <div class="console-content">
+                    <textarea></textarea>
+                </div>
+            </div>
+        </script>
+        <script id="console-table-output-tpl" type="text/html">
+            <div class="console-table">
+                <table>
+                    {{# for(var i=0;i < d.length;i++){ }}
+                    <tr>
+                        {{# if(i == 0 ){ }}
+                        {{# for(var val in d[i]){ }}
+                        <td><pre>{{ val }}</pre></td>
+                        {{# } }}
+                    </tr>
+                    <tr>
+                        {{# } }}
+                        {{# for(var val in d[i]){ }}
+                        <td><pre>{{ d[i][val] }}</pre></td>
+                        {{# } }}
+                    </tr>
+                    {{# } }}
+                </table>
+            </div>
+        </script>
+        <script id="console-normal-output-tpl" type="text/html">
+            <div class="console-text">
+                <pre>{{ d }}</pre>
+            </div>
+        </script>
+        <script type="text/javascript" src="/static/index/main.js" ></script>
+    </body>
+</html>

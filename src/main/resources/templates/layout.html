@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--公共样式-->
+	<!--<link rel="stylesheet" type="text/css" href="/static/plugins/css/layui/layui.small.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/plugins/css/fonticons/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/plugins/css/public.css"/>-->
+
+	<!--公共js-->
+	<script type="text/javascript" src="/static/plugins/core/jquery.min.js" ></script>
+	<!--<script type="text/javascript" src="/static/plugins/layui/layui.all.js"></script>
+	<script type="text/javascript" src="/static/plugins/core/seajs/sea.js" ></script>
+	<script type="text/javascript" src="/static/plugins/core/seajs/seajs-global.js"></script>-->
+	<script th:inline="javascript">
+		/*seajs.use("/static/plugins/core/util/ready.js");
+        window.vefileserver = [[${vefileserver}]];*/
+	</script>
+	<!--[if lt IE 9]>
+		<!--<script type="text/javascript" src="/static/plugins/layui/html5.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/layui/respond.min.js"></script>-->
+	<![endif]-->
+</head>
+<body>
+	<div layout:fragment="content"></div>
+</body>
+
+</html>

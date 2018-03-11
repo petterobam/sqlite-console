@@ -1,0 +1,288 @@
+/* CSS Document */
+body{font-family:Arial, '宋体', 'Microsoft YaHei';font-size:12px;color:#333;overflow-x: hidden;}
+*{padding:0; margin:0;}
+ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
+
+#page{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#top{
+    height: 110px;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+#main{
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    background-color: darkgray;
+}
+
+#open-info{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#current-db-info{
+    width: 20%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    background-color: #d6d6d6;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+}
+
+#open-console-info{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    background-color: #c5b7b9;
+    margin-left: 20%;
+    height: 30px;
+}
+
+#db-list{
+    width: 20%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    background-color: gainsboro;
+    position: absolute;
+    -moz-user-select:none;
+    min-height: 500px;
+}
+
+#db-list .db-area{
+    line-height: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#db-list .default{
+    background-color: #fff;
+}
+#db-list .active{
+    background-color: #69d697;
+}
+#db-list .db-area:hover{
+    background-color: #94caff;
+}
+#db-list .table-area{
+    line-height: 20px;
+    background-color: #eff4ff;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#db-list .table-area:hover{
+    background-color: #eaffc8;
+}
+
+#console{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    background-color: black;
+    margin-left: 20%;
+    min-height: 500px;
+    line-height: 30px;
+    color: #ffffff;
+    overflow-y: auto;
+}
+#console .active-console{
+
+}
+
+#console div{
+    position: relative;
+}
+
+#console .console-tag{
+    width: 60px;
+    text-align: right;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    position: absolute;
+}
+
+#console .console-content{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    margin-left: 60px;
+}
+
+#console .console-table{
+    margin-left: 20px;
+    overflow-x: auto;
+}
+#console .console-table table{
+    border-collapse: collapse;
+}
+#console .console-table table td{
+    border: 0.5px dashed #ffffff;
+    text-align: left;
+    padding: 5px;
+}
+
+#console .console-text{
+    margin-left: 20px;
+}
+
+#console .console-content textarea {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    color: inherit;
+    border: 0px;
+    outline:none;
+    resize:none;
+}
+
+
+#footer{
+    height: 30px;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
+ul.menue-x {clear: both;}
+ul.menue-x li { float:left; width:80px; height:30px; background:#900; line-height:30px; text-align:center; margin-right:2px; color:#fff;cursor: pointer;}
+ul.menue-x li:hover { background:#999;}
+
+.clear{clear: both;}
+#connect-pre{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#connect-pre *{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#connect-pre select{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    height:30px; background: #edf4ec; line-height:30px; text-align:center;width: 80px;box-sizing: border-box;
+    position: absolute;
+    border: black solid 1px;
+    cursor: pointer;
+}
+
+#connect-pre .inputText{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    height:30px; background: #edf4ec; line-height:26px;box-sizing: border-box;width: 100%;
+    margin-left: 80px;
+    padding-left: 5px;
+    border: black solid 1px;
+    cursor: text;
+}
+#connect-pre .inputText:focus{
+    background-color: #f5eac6;
+}
+#connect-pre .inputBtn{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    height:30px; background: #edf4ec; line-height:30px;box-sizing: border-box;width: 30px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    border: black solid 1px;
+    cursor: pointer;
+}
+#connect-pre .inputBtn:hover{
+    background-color: #00a0e9;
+}
+
+.w50{
+    width: 50px;
+}
+.w30{
+    width: 30px;
+}
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+
+pre{
+    white-space: pre-wrap!important;
+    word-wrap: break-word!important;
+    *white-space:normal!important;
+}

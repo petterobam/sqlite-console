@@ -1,0 +1,26 @@
+<div class="yearQuarterMonth-container">
+    <select class="choose" name="{{d.chooseName}}">
+        <option value="year">年度</option>
+        <option value="quarter">季度</option>
+        <option value="month">月度</option>
+    </select>
+    <select class="year" name="{{d.yearName}}">
+        {{# for(var i = d.startYear; i<= d.endYear; i++){ }}
+            <option value="{{i}}">{{i}}</option>
+        {{# } }}
+    </select>
+    <span>年</span>
+    <select class="month1" name="{{d.month1Name}}">
+        {{# for(var i = 1; i<= 12; i++){ }}
+            <option value="{{i}}">{{i}}</option>
+        {{# } }}
+    </select>
+     <span>月</span>
+     <span class="splitStr">至</span>
+     <select class="month2" name="{{d.month2Name}}">
+        {{# for(var i = 1; i<= 12; i++){ }}
+             <option value="{{i}}">{{i}}</option>
+         {{# } }}
+     </select>
+     <span>月</span>
+</div>

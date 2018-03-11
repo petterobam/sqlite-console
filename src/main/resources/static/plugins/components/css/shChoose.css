@@ -1,0 +1,12 @@
+.vetech-merchants-left,.vetech-merchants-right{position: absolute;top: 0px;bottom: 0px;overflow: hidden;}
+.vetech-merchants-left{left: 0px;padding: 10px;}
+.vetech-merchants-right{right: 0px;padding: 10px 10px 10px 0px;}
+.vetech-form-border{position: relative; border: 1px solid #ddd;padding: 10px;height: 100%;box-sizing: border-box; -webkit-box-sizing: border-box!important;  -moz-box-sizing: border-box!important;  box-sizing: border-box!important;}
+.vetech-merchants-list{position: absolute;top:40px;left: 10px;bottom: 0px;right: 10px;overflow: auto;}
+.vetech-merchants-list li{width: 100%;line-height: 24px;position: relative}
+.vetech-merchants-list li span{margin-left: 10px;position: absolute;left: 10px;line-height: 24px;top: 0px;right: 0px;overflow: hidden;white-space: nowrap;  text-overflow: ellipsis;}
+.vetech-merchants-title{background: #eee;line-height: 30px;padding: 0px 10px;}
+
+.layui-form-pane.layui-kz-pane80 .layui-form-label{width: 80px;}
+.layui-form-pane.layui-kz-pane80 .layui-input-block{margin-left: 80px;}
+.vetech-merchants-grid{position: absolute;top:130px;bottom: 0px;left: 10px;right: 10px;overflow: hidden;}
