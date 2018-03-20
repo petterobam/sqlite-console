@@ -9,6 +9,14 @@ PS：请放大查看 ~~
 # 基本界面设计
 ![my-sqlite-console-design](doc/images/my-sqlite-console-design.png)
 
+# 登陆界面
+![my-sqlite-console-login](doc/images/my-sqlite-console-login.gif)
+#### PS：开发中可以关闭验证码功能：
+```
+#是否启用验证码
+web.verify-code.enabled=false
+```
+
 # 后续功能
 0. ~~完善登陆验证（这个很重要）~~
 1. 添加更加丰富的Sqlite操作
