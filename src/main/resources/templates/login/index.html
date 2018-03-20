@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SqliteConsole登陆</title>
+    <link rel="stylesheet" type="text/css" href="/static/login/login.css"/>
+</head>
+<body>
+<div class="login-box">
+    <p class="login-title">Sqlite Console 系统</p>
+    <form id="loginForm" th:action="@{/login}" method="post">
+        <table>
+            <tr>
+                <td class="td-title">用户名</td>
+                <td colspan="2">
+                    <input type="text" name="username" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">密码</td>
+                <td colspan="2">
+                    <input type="password" name="password" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-title">验证码</td>
+                <td>
+                    <input type="text" name="verifyCode"/>
+                </td>
+                <td>
+                    <img alt="验证码" onclick="this.src='/login/verifyCode?d='+new Date()*1" src="/login/verifyCode"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input class="login-btn" type="submit" value="登  陆"/>
+                </td>
+                <td class="error-msg">
+                    <p th:if="${param.error}"
+                       th:text="${session.SPRING_SECURITY_LAST_EXCEPTION.message eq 'Bad credentials'? '用户名或密码错误' : session.SPRING_SECURITY_LAST_EXCEPTION.message}"></p>
+                    <p th:if="${param.logout}">注销成功</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

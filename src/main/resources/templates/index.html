@@ -18,15 +18,16 @@
                         <li>工具</li>
                         <li>窗口</li>
                         <li>帮助</li>
+                        <li class="logout-box"><a th:href="@{/logout}"><img src="/static/index/images/logout2.png" /></a></li>
                     </ul>
                 </div>
                 <div id="connect-pre" class="clear">
-                    <form id="consoleForm">
+                    <form id="consoleForm" onsubmit="return false;">
                         <select name="absolute">
-                            <option value="false">相对路径</option>
-                            <option value="true" selected="selected">绝对路径</option>
+                            <option value="false" selected="selected">相对路径</option>
+                            <option value="true">绝对路径</option>
                         </select>
-                        <input type="text" id="db-path-ipt" name="dbPath" class="inputText" value="D:\Sqlite\dbs"/>
+                        <input type="text" id="db-path-ipt" name="dbPath" class="inputText" value="database"/>
                         <input type="button" id="findDbBtn" class="inputBtn" value=">" />
                     </form>
                 </div>
@@ -58,7 +59,7 @@
         </script>
         <script id="console-active-tpl" type="text/html">
             <div class="active-console">
-                <div class="console-tag">sqlite&nbsp;＞&nbsp;</div>
+                <div class="console-tag">sqlite＞</div>
                 <div class="console-content">
                     <textarea></textarea>
                 </div>

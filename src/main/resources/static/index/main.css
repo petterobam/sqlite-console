@@ -150,6 +150,7 @@ ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
     -ms-box-orient: vertical;
     box-orient: vertical;
     position: absolute;
+    font-family: monospace;
 }
 
 #console .console-content{
@@ -182,6 +183,7 @@ ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
 }
 
 #console .console-content textarea {
+    text-indent: 1em;
     width: 100%;
     height: 30px;
     line-height: 30px;
@@ -190,6 +192,9 @@ ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
     border: 0px;
     outline:none;
     resize:none;
+}
+#console .console-content pre{
+    text-indent: 1em;
 }
 
 
@@ -203,6 +208,14 @@ ul,li { list-style:none; list-style-type:none; padding:0; margin:0;}
 ul.menue-x {clear: both;}
 ul.menue-x li { float:left; width:80px; height:30px; background:#900; line-height:30px; text-align:center; margin-right:2px; color:#fff;cursor: pointer;}
 ul.menue-x li:hover { background:#999;}
+ul.menue-x li.logout-box{
+    float: right;
+    width: auto;
+}
+ul.menue-x li.logout-box img{
+    height: 28px;
+    border: 1px solid #D2E4E8;
+}
 
 .clear{clear: both;}
 #connect-pre{

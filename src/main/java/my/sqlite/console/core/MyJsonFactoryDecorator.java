@@ -5,8 +5,8 @@ import com.fasterxml.jackson.databind.MappingJsonFactory;
 import net.logstash.logback.decorate.JsonFactoryDecorator;
 
 /**
- * Created by vetech on 2017/9/7.
- * @author houya
+ * 2017/9/7.
+ * @author 欧阳洁
  */
 public class MyJsonFactoryDecorator implements JsonFactoryDecorator {
 
