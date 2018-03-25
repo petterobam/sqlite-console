@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/petterobam/my-sqlite-console.svg?branch=master)](https://travis-ci.org/petterobam/my-sqlite-console)
+[![Coverage Status](https://coveralls.io/repos/github/petterobam/my-sqlite-console/badge.svg?branch=master)](https://coveralls.io/github/petterobam/my-sqlite-console?branch=master)
 
 # my-sqlite-console
 用于管理服务器上所有Sqlite数据库的Web应用，实现功能类似于Sqlite控制台。
