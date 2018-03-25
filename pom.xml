@@ -29,6 +29,7 @@
             <artifactId>my-sqlite</artifactId>
             <version>${my-sqlite.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -100,6 +101,13 @@
             <scope>true</scope>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>maven-repository</id>
+            <url>https://raw.github.com/petterobam/my-maven/master</url>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
