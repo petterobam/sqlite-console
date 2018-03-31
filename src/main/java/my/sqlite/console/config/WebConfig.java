@@ -23,7 +23,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     /**
      * 全局忽略
      */
-    private static final String IGNORURISTR = "/static/**,/**/*.ico,/**/*.css,/**/*.js,/**/open/**,/vesystemadmin/**,/error,/captcha,/captcha_check";
+    private static final String IGNORURISTR = "/static/**,/**/*.ico,/**/*.css,/**/*.js,/**/open/**,/error,/captcha,/captcha_check";
 
     /**
      * 常量

@@ -4,9 +4,10 @@ import my.sqlite.console.utils.SqliteConloseUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
- * Created by vetech on 2017/8/31.
+ * 密码加密md5工具
+ * @author 欧阳洁
  */
-public class PassworMd5 implements PasswordEncoder {
+public class PasswordMd5 implements PasswordEncoder {
 
 
     @Override

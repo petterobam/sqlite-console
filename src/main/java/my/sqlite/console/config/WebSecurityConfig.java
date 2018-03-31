@@ -36,7 +36,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     /**
      * 全局忽略
      */
-    private static final String IGNORURISTR = "/static/**,/**/*.ico,/**/*.css,/**/*.js,/**/open/**,/vesystemadmin/**,/error,/login/verifyCode,/login/verifyCodeCheck";
+    private static final String IGNORURISTR = "/static/**,/**/*.ico,/**/*.css,/**/*.js,/**/open/**,/error,/login/verifyCode,/login/verifyCodeCheck";
     /**
      * 设置cookie有效期 1天
      */
@@ -94,7 +94,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
         provider.setHideUserNotFoundExceptions(false);
         provider.setUserDetailsService(detailsService);
-        provider.setPasswordEncoder(new PassworMd5());
+        provider.setPasswordEncoder(new PasswordMd5());
         return provider;
     }
 
