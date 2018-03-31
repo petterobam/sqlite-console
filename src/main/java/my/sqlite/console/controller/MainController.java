@@ -3,7 +3,7 @@ package my.sqlite.console.controller;
 import my.sqlite.console.entity.MyAjaxResult;
 import my.sqlite.console.entity.MyConsole;
 import my.sqlite.console.service.MyConsoleService;
-import org.apache.commons.lang.StringUtils;
+import my.sqlite.utils.SqliteUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -62,7 +62,7 @@ public class MainController {
     public @ResponseBody MyAjaxResult getTables(@RequestBody MyConsole myConsole) {
         MyAjaxResult result = new MyAjaxResult();
         String dbPath = myConsole.getDbPath();
-        if(StringUtils.isNotBlank(dbPath)){
+        if(!SqliteUtils.isBlank(dbPath)){
             dbPath =dbPath.replaceAll("\\\\","/");
             while (dbPath.indexOf("//") >= 0){
                 dbPath = dbPath.replaceAll("//","/");

@@ -1,7 +1,7 @@
 package my.sqlite.console.config;
 
 import jdk.nashorn.internal.ir.annotations.Ignore;
-import org.apache.commons.lang.StringUtils;
+import my.sqlite.utils.SqliteUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -39,7 +39,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public String getIgnorUriStr() {
         //默认忽略
         String ignorUriStr = IGNORURISTR;
-        if (StringUtils.isNotBlank(ignoreUri)) {
+        if (!SqliteUtils.isBlank(ignoreUri)) {
             ignorUriStr = ignorUriStr + "," + ignoreUri;
         }
         return ignorUriStr;
@@ -61,11 +61,11 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        String[] e = StringUtils.trimToEmpty(getIgnorUriStr()).split(",");
+        String[] e = SqliteUtils.trimToEmpty(getIgnorUriStr()).split(",");
         Set<String> pset = new TreeSet<String>();
         pset.add("/login");
         for (String str : e) {
-            if (StringUtils.isNotBlank(str)) {
+            if (!SqliteUtils.isBlank(str)) {
                 pset.add(str);
             }
         }

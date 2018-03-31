@@ -1,7 +1,7 @@
 package my.sqlite.console.service;
 
 import my.sqlite.console.entity.MyUser;
-import org.apache.commons.lang.StringUtils;
+import my.sqlite.utils.SqliteUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
@@ -43,15 +43,15 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        if(StringUtils.isBlank(username)){
+        if(SqliteUtils.isBlank(username)){
             username = (String) request.getSession().getAttribute("name");
         }
-        if (StringUtils.isBlank(username)) {
+        if (SqliteUtils.isBlank(username)) {
             throw new UsernameNotFoundException("用户名为空");
         }
         if (captchaEnabled) {
             String code = request.getParameter("verifyCode");
-            if (StringUtils.isBlank(code)) {
+            if (SqliteUtils.isBlank(code)) {
                 throw new UsernameNotFoundException("验证码不能为空");
             }
             String verifyCode = (String) request.getSession().getAttribute("verifyCode");
