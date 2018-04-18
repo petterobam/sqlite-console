@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/petterobam/my-sqlite-console.svg?branch=master)](https://travis-ci.org/petterobam/my-sqlite-console)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![bitHound Overall Score](https://www.bithound.io/github/petterobam/my-sqlite-console/badges/score.svg)](https://www.bithound.io/github/petterobam/my-sqlite-console)
 [![bitHound Code](https://www.bithound.io/github/petterobam/my-sqlite-console/badges/code.svg)](https://www.bithound.io/github/petterobam/my-sqlite-console)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
