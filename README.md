@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/petterobam/my-sqlite-console.svg?branch=master)](https://travis-ci.org/petterobam/my-sqlite-console)
-[![bitHound Overall Score](https://www.bithound.io/github/petterobam/my-sqlite-console/badges/score.svg)](https://www.bithound.io/github/petterobam/my-sqlite-console)
-[![bitHound Code](https://www.bithound.io/github/petterobam/my-sqlite-console/badges/code.svg)](https://www.bithound.io/github/petterobam/my-sqlite-console)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Analytics](https://ga-beacon.appspot.com/UA-85522412-2/welcome-page)](https://github.com/igrigorik/ga-beacon)
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
@@ -35,7 +33,7 @@ web.verify-code.enabled=false
     - 工具
     - 窗口
     - 帮助
-  
+
 3. 实现多窗口、多连接
 4. 添加多级权限（包括对操作系统命令的执行）
 5. 添加可视界面编辑操作（建表、修改等）
