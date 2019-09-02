@@ -18,11 +18,11 @@ import java.util.Arrays;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {"my.sqlite.console"})
-public class MySqliteConsoleApplication {
+public class SqliteConsoleApplication {
     /**
      * 日志工具
      */
-    private Logger logger = LoggerFactory.getLogger(MySqliteConsoleApplication.class);
+    private Logger logger = LoggerFactory.getLogger(SqliteConsoleApplication.class);
 
     /**
      * 主程序
@@ -30,7 +30,7 @@ public class MySqliteConsoleApplication {
      * @param args 构造函数
      */
     public static void main(String[] args) {
-        SpringApplication.run(MySqliteConsoleApplication.class, args);
+        SpringApplication.run(SqliteConsoleApplication.class, args);
     }
 
     /**
@@ -42,7 +42,7 @@ public class MySqliteConsoleApplication {
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
-            logger.info("[my-sqlite-console] Spring boot 服务");
+            logger.info("[sqlite-console] Spring boot 服务");
             String[] beanNames = ctx.getBeanDefinitionNames();
             Arrays.sort(beanNames);
             for (String beanName : beanNames) {

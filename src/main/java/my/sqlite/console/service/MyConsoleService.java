@@ -44,6 +44,7 @@ public class MyConsoleService extends SqliteConsoleBaseService {
      * 获取数据库表名集合
      * @return
      */
+    @Override
     public String[] getTableNameArr(){
         return super.getTableNameArr();
     }

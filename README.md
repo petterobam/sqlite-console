@@ -1,21 +1,21 @@
-[![Build Status](https://travis-ci.org/petterobam/my-sqlite-console.svg?branch=master)](https://travis-ci.org/petterobam/my-sqlite-console)
+[![Build Status](https://travis-ci.org/petterobam/sqlite-console.svg?branch=master)](https://travis-ci.org/petterobam/sqlite-console)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Analytics](https://ga-beacon.appspot.com/UA-85522412-2/welcome-page)](https://github.com/igrigorik/ga-beacon)
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-# my-sqlite-console
+# sqlite-console
 用于管理服务器上所有Sqlite数据库的Web应用，实现功能类似于Sqlite控制台。
 
 # 基本功能演示
 PS：请放大查看 ~~
 
-![my-sqlite-console-show](doc/images/my-sqlite-console-show.gif)
+![sqlite-console-show](doc/images/sqlite-console-show.gif)
 
 # 基本界面设计
-![my-sqlite-console-design](doc/images/my-sqlite-console-design.png)
+![sqlite-console-design](doc/images/sqlite-console-design.png)
 
 # 登陆界面
-![my-sqlite-console-login](doc/images/my-sqlite-console-login.gif)
+![sqlite-console-login](doc/images/sqlite-console-login.gif)
 #### PS：开发中可以关闭验证码功能：
 ```
 #是否启用验证码
